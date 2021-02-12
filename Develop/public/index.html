@@ -55,35 +55,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="index.js"></script>
-    <script>
-      // registering service worker to cache files
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js").then((reg) => {
-            console.log("We found your service worker file!", reg);
-          });
-        });
-      }
-
-      // creating IndexDB
-      const request = window.indexedDB.open("transaction", 1);
-      //change the structure inside our database, do things like adding object stores and now to add an index
-      request.onupgradeneeded = ({ target }) => {
-        //saving a reference to the database
-        const db = target.result;
-        //creating a new store called toDoList in the database.  need a reference if we want to add indexes. if an object store is like a table or a collection, thus each objectStore would have different data and different indexes
-        const objectStore = db.createObjectStore("transaction");
-        //this is the name of the objectStore, createIndex will create an index. a quick reference to find information based on the field name specified,  1st argument is what you call the index, named it timestamp, and the 2nd arg is the field name that you want that index to reference. i keep these the same so i don't have to worry about it, basically what we do is create a new index called timestamp that will let us query by timestamp. without these steps you can not query. we are building a way to search by timestamp. field you want that index to reference.  lets open in the browser, now we can see timestamp, we can now query by timestamp.   lets add 3 indexes, have to setup indexes query,
-        //index will be called icebox and it will reference the icebox key/value pair, building references so we can query later on. but we still need data. open in browser, should see toDoList object store, data bucket, and should see 3 indexes, search by icebox, inprogress, complete.  this may seem abstract until we add data.  lets look at 22 adding data
-        objectStore.createIndex("name", "name");
-        objectStore.createIndex("value", "value");
-        objectStore.createIndex("date", "date");
-      };
-
-      dbrequest.onsuccess = (event) => {
-        console.log(request.result);
-      };
-    </script>
+    <script src="/db.js"></script>
+    <script src="/index.js"></script>
+    <script src="/Develop/public/service-worker.js"></script>
   </body>
 </html>
