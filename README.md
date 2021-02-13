@@ -1,63 +1,49 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+# Table of Contents:
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+[Description](#description)
 
-Offline Functionality:
+[Installations](#installations)
 
-  * Enter deposits offline
+[Usage Information](#usage-information)
 
-  * Enter expenses offline
+[Licenses](#licenses)
 
-When brought back online:
+[Contribution Guidelines](#contribution-guidelines)
 
-  * Offline entries should be added to tracker.
+[Test Instructions](#test-instructions)
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+[Questions](#questions)
 
-## Business Context
+# Description:
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+The Budget Tracker application allows users to track continuously track both income and outgoing expenses. With a simple interface users can enter the given amount of an expense, name that expense, and indicate whether the expense is a incoming or outgoing. This is a Progressive Web Application that allows a user to track expenses while offline as well as download the application locally for persistant access to a given machine.
 
+# Installations:
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+Installations include Express, and MongoDB
 
-- - -
+# Usage Information:
 
-## Commit Early and Often
+This application is used for anyone who wants to keep a continuous track of all expenses.
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+# Licenses:
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+None
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+# Contribution Guidelines:
 
-* Follow these guidelines for committing:
+N/A
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+# Test Instructions:
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+Manual
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+# Questions:
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+https://github.com/https://github.com/dawsontc003/budget-tracker
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+If you have specific questions please contact the primary developer at: dawsontc003@gmail.com
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+![image](https://user-images.githubusercontent.com/69283624/107859731-b6230f00-6df8-11eb-87c1-0c7f796a1c22.png)
